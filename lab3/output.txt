@@ -1,0 +1,20 @@
+=== Part C: Network graph, A -> G ===
+Greedy: ['A', 'B', 'G'] | cost: 10 | nodes expanded: 3
+A*    : ['A', 'C', 'D', 'E', 'F', 'G'] | cost: 7 | nodes expanded: 7
+
+=== Part D (Cyber): Attack-path investigation ===
+Most likely attack path: ['Perimeter', 'AppServer', 'DBGateway', 'BackupSrv', 'SIEMRelay', 'CrownJewel'] | estimated total risk: 7 | nodes expanded: 7
+(Greedy for comparison) : ['Perimeter', 'Workstation', 'CrownJewel'] | risk: 10 | nodes expanded: 3
+
+=== Part D (SE): A* grid pathfinding (4-directional, step cost 1) ===
+Path: [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (1, 4), (2, 4), (3, 4), (4, 4), (4, 3), (4, 2), (4, 1), (5, 1), (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (7, 5)]
+Cost: 18 | nodes expanded: 36
+S . . # . . . .
+* . . # * * * .
+* . . # * # * .
+* . . # * # * .
+* * * * * # * .
+. . . . . # * G
+
+=== Reflection Q2 check: h(B) = 8 ===
+Greedy: ['A', 'C', 'D', 'E', 'F', 'G'] | cost: 7 | nodes expanded: 6
